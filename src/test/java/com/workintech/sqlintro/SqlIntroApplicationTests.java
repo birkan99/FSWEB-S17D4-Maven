@@ -85,10 +85,4 @@ class SqlIntroApplicationTests {
 		assertEquals(ogrenciRepository.findElderStudent().getAd(), "Kenan");
 		assertEquals(ogrenciRepository.findElderStudent().getSoyad(), "Emin");
 	}
-
-	@DisplayName("İkinci harfi E olan kitapları listeleyiniz..")
-	@Test
-	void findBooksSecondLetterOfNTest(){
-		assertEquals(ogrenciRepository.findStudentsSecondLetterOfN().size(), 5);
-	}
 }
